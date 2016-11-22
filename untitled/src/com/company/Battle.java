@@ -7,7 +7,6 @@ public class Battle {
     int stepCounter = 1;
     DateHelper dh;
     Squad sq1, sq2;
-    boolean squadFlag;
 
     public void Run() {
         do {

@@ -31,10 +31,8 @@ public class Main {
         Ylfing.addSquadMember(new Archer("Hrossketil Eiriksson"));
         Ylfing.addSquadMember(new Archer("Arn Borgarsson"));*/
 
-
-
         Battle asgardChallenge = new Battle(Volsung, Ylfing);
         asgardChallenge.Run();
-        }
-        // end Main
     }
+    // end Main
+}

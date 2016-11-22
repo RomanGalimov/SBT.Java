@@ -4,7 +4,7 @@ package com.company;
  * Created by NecroS on 11/19/2016.
  */
 
-public class Viking extends Warrior implements IWarrior,Cloneable {
+public class Viking extends Warrior implements IWarrior, Cloneable {
 
     private int WeaponSkill = 2;
 
@@ -19,23 +19,23 @@ public class Viking extends Warrior implements IWarrior,Cloneable {
     }
 
     @Override
-    public boolean isAlive(){
-        return getHealth()>0;
+    public boolean isAlive() {
+        return getHealth() > 0;
     }
 
     @Override
-    public void setSquadName(String name){
+    public void setSquadName(String name) {
         super.setSquadName(name);
     }
 
     @Override
-    public boolean rollToHit(){
+    public boolean rollToHit() {
         return DiceHelper.roll6d() >= WeaponSkill;
     }
 
     @Override
     public Viking clone() throws CloneNotSupportedException {
-      return (Viking)super.clone();
+        return (Viking) super.clone();
     }
 
 
@@ -45,7 +45,7 @@ public class Viking extends Warrior implements IWarrior,Cloneable {
         setName("V1");
     }
 
-    public Viking(String name){
+    public Viking(String name) {
         setHealth(100);
         setDamage(50);
         setName(name);

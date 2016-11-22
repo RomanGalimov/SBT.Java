@@ -1,4 +1,5 @@
 package com.company;
+
 import java.util.Random;
 
 /**
@@ -6,7 +7,8 @@ import java.util.Random;
  */
 public class DiceHelper {
     static Random rnd = new Random();
-    public static int roll6d(){
+
+    public static int roll6d() {
         return 1 + rnd.nextInt(5);
     }
 }

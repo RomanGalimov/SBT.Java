@@ -5,8 +5,12 @@ package com.company;
  */
 public interface IWarrior {
     int attack();
+
     void takeDamage(int damage);
+
     boolean isAlive();
+
     void setSquadName(String name);
+
     boolean rollToHit();
 }

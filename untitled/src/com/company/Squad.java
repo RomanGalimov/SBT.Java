@@ -16,7 +16,7 @@ public class Squad implements Cloneable {
         Warrior aliveWarrior = null;
         do {
             aliveWarrior = squadArray[rnd.nextInt(squadArray.length)];
-            if(aliveWarrior.isAlive()) break;
+            if (aliveWarrior.isAlive()) break;
         } while (hasAliveWarriors());
         return aliveWarrior;
     }
@@ -31,7 +31,6 @@ public class Squad implements Cloneable {
     }
 
 
-
     @Override
     public String toString() {
         return this.getName();
@@ -40,16 +39,16 @@ public class Squad implements Cloneable {
     @Override
     public Squad clone() throws CloneNotSupportedException {
         Squad clonedSquad;
-        try{
-            clonedSquad = (Squad)super.clone();
+        try {
+            clonedSquad = (Squad) super.clone();
             clonedSquad.squadArray = new Warrior[this.squadArray.length];
             int i = 0;
-            for (Warrior warrior: this.squadArray
+            for (Warrior warrior : this.squadArray
                     ) {
-                clonedSquad.squadArray[i] =(Warrior)warrior.clone();
+                clonedSquad.squadArray[i] = (Warrior) warrior.clone();
                 i++;
             }
-        } catch(CloneNotSupportedException e){
+        } catch (CloneNotSupportedException e) {
             throw new UnsupportedOperationException(e);
         }
 
@@ -63,8 +62,8 @@ public class Squad implements Cloneable {
     }
 
     public void addSquadMember(Warrior squadNewMember) {
-        for (int i = 0; i < squadArray.length; i++){
-            if(squadArray[i] == null){
+        for (int i = 0; i < squadArray.length; i++) {
+            if (squadArray[i] == null) {
                 squadArray[i] = squadNewMember;
                 squadArray[i].setSquadName(getName());
                 break;
@@ -72,7 +71,7 @@ public class Squad implements Cloneable {
         }
     }
 
-    public Squad(String name, int size){
+    public Squad(String name, int size) {
         setName(name);
         this.squadArray = new Warrior[size];
     }
@@ -83,10 +82,10 @@ public class Squad implements Cloneable {
 
     public void setName(String name) {
         this.name = name;
-        if(squadArray != null && squadArray.length >0){
-            for (Warrior warrior: squadArray
-                 ) {
-               warrior.setSquadName(name);
+        if (squadArray != null && squadArray.length > 0) {
+            for (Warrior warrior : squadArray
+                    ) {
+                warrior.setSquadName(name);
             }
         }
     }

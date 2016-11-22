@@ -32,7 +32,7 @@ public class Archer extends Warrior implements IWarrior, Cloneable {
 
     @Override
     public Archer clone() throws CloneNotSupportedException {
-        return (Archer)super.clone();
+        return (Archer) super.clone();
     }
 
     Archer() {
