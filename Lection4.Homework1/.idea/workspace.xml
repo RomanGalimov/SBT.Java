@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a098e84-0166-4a87-9f08-c57af87b2c32" name="Default" comment="StyleUpdatedChanges">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="4a098e84-0166-4a87-9f08-c57af87b2c32" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled/src/com/company/Archer.java" afterPath="$PROJECT_DIR$/../untitled/src/com/company/Archer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled/src/com/company/Battle.java" afterPath="$PROJECT_DIR$/../untitled/src/com/company/Battle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled/src/com/company/DateHelper.java" afterPath="$PROJECT_DIR$/../untitled/src/com/company/DateHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled/src/com/company/DiceHelper.java" afterPath="$PROJECT_DIR$/../untitled/src/com/company/DiceHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled/src/com/company/IWarrior.java" afterPath="$PROJECT_DIR$/../untitled/src/com/company/IWarrior.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled/src/com/company/Main.java" afterPath="$PROJECT_DIR$/../untitled/src/com/company/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled/src/com/company/Squad.java" afterPath="$PROJECT_DIR$/../untitled/src/com/company/Squad.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled/src/com/company/Viking.java" afterPath="$PROJECT_DIR$/../untitled/src/com/company/Viking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled/src/com/company/Warrior.java" afterPath="$PROJECT_DIR$/../untitled/src/com/company/Warrior.java" />
     </list>
     <ignored path="Lection4.Homework1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -548,6 +536,14 @@
       <option name="presentableId" value="Default" />
       <updated>1477588459223</updated>
     </task>
+    <task id="LOCAL-00001" summary="Style Updated">
+      <created>1479788206824</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1479788206824</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -611,7 +607,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="StyleUpdatedChanges" />
-    <option name="LAST_COMMIT_MESSAGE" value="StyleUpdatedChanges" />
+    <MESSAGE value="Style Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Style Updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
