@@ -11,7 +11,8 @@ public class Viking extends Warrior implements IWarrior,Cloneable {
     @Override
     public int attack() {
         return getDamage();
-    }
+    } //зачем переписывать унаследованные методы с такой же реализацией??
+//    тебе явно стоит перечитать лекцию о наследовании
 
     @Override
     public void takeDamage(int damage) {
@@ -39,7 +40,7 @@ public class Viking extends Warrior implements IWarrior,Cloneable {
     }
 
 
-    Viking() {
+    Viking() {  //конструкторы принято писать перед остальными методами
         setHealth(100);
         setDamage(50);
         setName("V1");

@@ -4,10 +4,10 @@ package com.company;
  * Created by NecroS on 11/19/2016.
  */
 public class Archer extends Warrior implements IWarrior, Cloneable {
-    int BallisticSkill = 4;
+    int BallisticSkill = 4; //константы толжны быть static final, если константа локальная - еще и private. и в любом случае с маленкой буквы
 
     @Override
-    public int attack() {
+    public int attack() { //?????
         return getDamage();
     }
 

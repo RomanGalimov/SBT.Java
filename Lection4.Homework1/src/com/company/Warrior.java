@@ -18,7 +18,9 @@ public abstract class Warrior implements IWarrior {
         return health;
     }
 
-    public void setHealth(int health) {
+    public void setHealth(int health) { //согласно концепции программы, мы можем изменить здоровье персонажа, только нанеся ему урон. в данном случае
+//  использование сеттера равносильно объявлению health как public - кто угодно и когда угодно может изменить здоровье персонажа, например, воскресить из мертвых.
+//  это противоречит здравому смыслу и является нарушением инкапсуляции.
         this.health = health;
     }
 

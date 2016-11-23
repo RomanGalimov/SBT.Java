@@ -24,8 +24,8 @@ public class Squad implements Cloneable {
     public boolean hasAliveWarriors() {
         boolean alive = false;
         for (Warrior warrior : squadArray
-                ) {
-            alive = alive | warrior.isAlive();
+                ) { //что тут произошло? почему скобки раскиданы?
+            alive = alive | warrior.isAlive(); //зачем проходить весь отряд в поисках хотя бы одного живого? при нахождении сразу return true;
         }
         return alive;
     }
@@ -45,26 +45,26 @@ public class Squad implements Cloneable {
             clonedSquad.squadArray = new Warrior[this.squadArray.length];
             int i = 0;
             for (Warrior warrior: this.squadArray
-                    ) {
-                clonedSquad.squadArray[i] =(Warrior)warrior.clone();
-                i++;
+                    ) { //опять...
+                clonedSquad.squadArray[i] =(Warrior)warrior.clone(); //медод мог бы вернуть сразу Warrior, тогда бы не пришлось приводить тип
+                i++; //для цикла с внутренним счетчиком есть форма for(int i = x; i < y; i++). в данном случае счетчик вообще не нужен
             }
         } catch(CloneNotSupportedException e){
             throw new UnsupportedOperationException(e);
         }
 
-
+//что это за пустые строки?
         return clonedSquad;
     }
 
     @Override
     public boolean equals(Object obj) {
-        return super.equals(obj);
+        return super.equals(obj); //это неверная реализация
     }
 
     public void addSquadMember(Warrior squadNewMember) {
         for (int i = 0; i < squadArray.length; i++){
-            if(squadArray[i] == null){
+            if(squadArray[i] == null){ //можно было передавать в конструктор готовый массив бойцов. без извращений
                 squadArray[i] = squadNewMember;
                 squadArray[i].setSquadName(getName());
                 break;
@@ -85,7 +85,7 @@ public class Squad implements Cloneable {
         this.name = name;
         if(squadArray != null && squadArray.length >0){
             for (Warrior warrior: squadArray
-                 ) {
+                 ) { //в следующей лабе за такое форматирование буду ставить 0
                warrior.setSquadName(name);
             }
         }
